@@ -13,3 +13,6 @@ export const openEditServiceModal = createAction<IModal>(
 export const closeEditServiceModal = createAction<void>(
   "ui/closeEditServiceModal"
 );
+
+export const openOrderModal = createAction<IModal>("ui/openOrderModal");
+export const closeOrderModal = createAction<void>("ui/closeOrderModal");

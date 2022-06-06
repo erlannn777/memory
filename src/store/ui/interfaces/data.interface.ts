@@ -7,6 +7,7 @@ export interface IModal<T = any> {
 export interface IUIData {
   createService: IModal;
   editService: IModal;
+  order: IModal;
 }
 
 export type IUIState = IUIData;

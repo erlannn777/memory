@@ -9,3 +9,7 @@ export const useCreateServiceModal = (): IModal => {
 export const useEditServiceModal = (): IModal => {
   return useSelector((state: Store) => state.ui.editService);
 };
+
+export const useOrderModal = (): IModal => {
+  return useSelector((state: Store) => state.ui.order);
+};

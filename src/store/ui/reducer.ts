@@ -2,8 +2,10 @@ import { createReducer } from "@reduxjs/toolkit";
 import {
   closeCreateServiceModal,
   closeEditServiceModal,
+  closeOrderModal,
   openCreateServiceModal,
   openEditServiceModal,
+  openOrderModal,
 } from "./actions";
 
 import { IUIState } from "./interfaces/data.interface";
@@ -14,6 +16,10 @@ export const initialState: IUIState = {
     open: false,
   },
   editService: {
+    data: null,
+    open: false,
+  },
+  order: {
     data: null,
     open: false,
   },
@@ -51,6 +57,23 @@ export default createReducer<IUIState>(initialState, (buiilder) =>
         ...state,
         editService: {
           ...state.editService,
+          open: false,
+        },
+      })
+    )
+    .addCase(
+      openOrderModal,
+      (state, { payload }): IUIState => ({
+        ...state,
+        order: payload,
+      })
+    )
+    .addCase(
+      closeOrderModal,
+      (state): IUIState => ({
+        ...state,
+        order: {
+          ...state.order,
           open: false,
         },
       })

@@ -3,11 +3,7 @@ import React, { Fragment } from "react";
 import { useAppDispatch } from "../../store";
 import { closeEditServiceModal } from "../../store/ui/actions";
 import { useEditServiceModal } from "../../store/ui/hooks";
-import {
-  AiOutlineFileImage,
-  AiOutlinePlus,
-  AiOutlineDelete,
-} from "react-icons/ai";
+import { AiOutlinePlus, AiOutlineDelete } from "react-icons/ai";
 
 const EditServiceModal = () => {
   const dispatch = useAppDispatch();
