@@ -13,3 +13,4 @@ export const useEditServiceModal = (): IModal => {
 export const useOrderModal = (): IModal => {
   return useSelector((state: Store) => state.ui.order);
 };
+

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { AiOutlineBook, AiOutlineUser } from "react-icons/ai";
 import { useAppDispatch } from "../../store";
 import { openOrderModal } from "../../store/ui/actions";
@@ -202,10 +203,11 @@ const AllOrders = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+          </div>
+          </div>
+          </div>
+  )}
 
-export default AllOrders;
+
+
+export default AllOrders

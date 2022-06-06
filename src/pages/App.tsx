@@ -10,9 +10,13 @@ import store from "../store";
 import CreateServiceModal from "./services/createServiceModal";
 import EditServiceModal from "./services/editserviceModal";
 import AllOrders from "./orders";
+
 import NewOrderModal from "./orders/orderModal";
 import NewOrders from "./orders/newOrders";
 import Statistics from "./statistics";
+import Users from "./users";
+import QA from "./QA";
+import Chat from "./chat";
 
 function App() {
   return (
@@ -27,6 +31,9 @@ function App() {
           <Route path="/all-orders" element={<AllOrders />} />
           <Route path="/new-orders" element={<NewOrders />} />
           <Route path="/statistics" element={<Statistics />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/QA" element={<QA />} />
+          <Route path="/Chat" element={<Chat />} />
         </Routes>
         <CreateServiceModal />
         <NewOrderModal />
