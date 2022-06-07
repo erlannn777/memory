@@ -10,8 +10,8 @@ import {
 const ServiceDetailsSecond = () => {
   const dispatch = useAppDispatch();
   return (
-    <div className="">
-      <div className="flex flex-col mx-36 px-8 bg-white min-h-screen mt-4">
+    <div className=" flex justify-center">
+      <div className="flex flex-col w-11/12 px-8 bg-white min-h-screen mt-4">
         <div className="text-center ">
           <span className="font-bold text-xl">Редактирование</span>
         </div>

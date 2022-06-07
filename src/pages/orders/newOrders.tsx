@@ -2,8 +2,8 @@ import React from "react";
 
 const NewOrders = () => {
   return (
-    <div>
-      <div className="mx-56 bg-white">
+    <div className="flex justify-center">
+      <div className="w-11/12 bg-white">
         <div className="w-full text-center">
           <span className="font-bold text-xl">Новые заказы</span>
         </div>

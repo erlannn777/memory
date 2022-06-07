@@ -18,7 +18,7 @@ const Header = () => {
             Выход
           </button>
         </div>
-        <div className="flex justify-end items-center">
+        <div className="flex justify-end items-center flex-wrap">
           <div className="flex items-center justify-around m-3">
             <AiOutlineSearch />
             <span className="ml-1 font-normal text-slate-500 text-sm">

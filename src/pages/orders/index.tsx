@@ -7,12 +7,12 @@ import { openOrderModal } from "../../store/ui/actions";
 const AllOrders = () => {
   const dispatch = useAppDispatch();
   return (
-    <div>
-      <div className="mx-56 bg-white">
+    <div className="flex justify-center">
+      <div className="lg:w-4/5 w-11/12 bg-white">
         <div className="w-full text-center">
           <span className="font-bold text-xl">Все заказы</span>
         </div>
-        <div className="flex justify-between mx-36 mt-3">
+        <div className="flex justify-between mt-3">
           <div className="dropdown inline-block relative ml-2">
             <button className="rounded-3xl py-2 px-8 text-white bg-cyan-500 inline-flex items-center">
               <span className="mr-1">За год</span>
@@ -58,7 +58,7 @@ const AllOrders = () => {
             Новые заказы
           </button>
         </div>
-        <div className="mx-16 my-3">
+        <div className=" my-3">
           <div className=" flex justify-between">
             <div className="w-60 p-2 flex items-center justify-start rounded-xl bg-lime-500">
               <div className="w-14 h-14 m-2 flex items-center justify-center bg-white rounded-full">
@@ -203,11 +203,10 @@ const AllOrders = () => {
               </div>
             </div>
           </div>
-          </div>
-          </div>
-          </div>
-  )}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-
-
-export default AllOrders
+export default AllOrders;
