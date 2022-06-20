@@ -1,6 +1,7 @@
 import React from "react";
 
 import { AiOutlineBook, AiOutlineUser } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { useAppDispatch } from "../../store";
 import { openOrderModal } from "../../store/ui/actions";
 
@@ -54,9 +55,11 @@ const AllOrders = () => {
           <button className="rounded-3xl py-2 px-8 text-white bg-cyan-500">
             Выбор даты
           </button>
-          <button className="rounded-3xl py-2 px-8 text-white bg-cyan-500">
-            Новые заказы
-          </button>
+          <Link to="/new-orders">
+            <button className="rounded-3xl py-2 px-8 text-white bg-cyan-500">
+              Новые заказы
+            </button>
+          </Link>
         </div>
         <div className=" my-3">
           <div className=" flex justify-between">

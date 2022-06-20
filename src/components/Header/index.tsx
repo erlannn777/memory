@@ -7,6 +7,7 @@ import {
   AiOutlineMessage,
   AiOutlineQuestionCircle,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -14,46 +15,62 @@ const Header = () => {
       <div className=" mx-36 bg-white">
         <div className="pt-6 mx-8 flex justify-between items-center">
           <span className="font-semibold text-sm">MemoriesManager</span>
-          <button className="rounded-3xl py-2 px-8 text-white bg-sky-700">
-            Выход
-          </button>
+          <Link to="/login">
+            <button className="rounded-3xl py-2 px-8 text-white bg-sky-700">
+              Войти
+            </button>
+          </Link>
         </div>
-        <div className="flex justify-end items-center flex-wrap">
-          <div className="flex items-center justify-around m-3">
-            <AiOutlineSearch />
-            <span className="ml-1 font-normal text-slate-500 text-sm">
-              Заказы
-            </span>
-          </div>
+        <div className="flex justify-end items-center flex-wrap ">
+          <Link to="/all-orders">
+            <div className="flex items-center justify-around m-3 cursor-pointer ">
+              <AiOutlineSearch className="hover:text-black" />
+              <span className="ml-1 font-normal text-slate-500 text-sm hover:text-black">
+                Заказы
+              </span>
+            </div>
+          </Link>
 
-          <div className="flex items-center justify-around m-3">
-            <AiOutlineBarChart />
-            <span className="ml-1 font-normal text-slate-500 text-sm">
-              Статистика
-            </span>
-          </div>
-          <div className="flex items-center justify-around m-3">
-            <AiOutlineShop />
-            <span className="ml-1 font-normal text-slate-500 text-sm">
-              Товары и услуги
-            </span>
-          </div>
-          <div className="flex items-center justify-around m-3">
-            <AiOutlineTeam />
-            <span className="ml-1 font-normal text-slate-500 text-sm">
-              Пользователи
-            </span>
-          </div>
-          <div className="flex items-center justify-around m-3">
-            <AiOutlineMessage />
-            <span className="ml-1 font-normal text-slate-500 text-sm">Чат</span>
-          </div>
-          <div className="flex items-center justify-around m-3">
-            <AiOutlineQuestionCircle />
-            <span className="ml-1 font-normal text-slate-500 text-sm">
-              Вопрос-ответ
-            </span>
-          </div>
+          <Link to="/statistics">
+            <div className="flex items-center justify-around m-3 cursor-pointer ">
+              <AiOutlineBarChart className="hover:text-black" />
+              <span className="ml-1 font-normal text-slate-500 text-sm hover:text-black">
+                Статистика
+              </span>
+            </div>
+          </Link>
+          <Link to="/services">
+            <div className="flex items-center justify-around m-3 cursor-pointer ">
+              <AiOutlineShop className="hover:text-black" />
+              <span className="ml-1 font-normal text-slate-500 text-sm hover:text-black">
+                Товары и услуги
+              </span>
+            </div>
+          </Link>
+          <Link to="/users">
+            <div className="flex items-center justify-around m-3 cursor-pointer ">
+              <AiOutlineTeam className="hover:text-black" />
+              <span className="ml-1 font-normal text-slate-500 text-sm hover:text-black">
+                Пользователи
+              </span>
+            </div>
+          </Link>
+          <Link to="/chat">
+            <div className="flex items-center justify-around m-3 cursor-pointer ">
+              <AiOutlineMessage className="hover:text-black" />
+              <span className="ml-1 font-normal text-slate-500 text-sm hover:text-black">
+                Чат
+              </span>
+            </div>
+          </Link>
+          <Link to="/qa">
+            <div className="flex items-center justify-around m-3 cursor-pointer ">
+              <AiOutlineQuestionCircle className="hover:text-black" />
+              <span className="ml-1 font-normal text-slate-500 text-sm hover:text-black">
+                Вопрос-ответ
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

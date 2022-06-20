@@ -1,62 +1,19 @@
 import React from "react";
-import {
-  CartesianGrid,
-  Cell,
-  Legend,
-  Line,
-  LineChart,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { Cell, Pie, PieChart } from "recharts";
+import AreaChart from "./AreaChart";
 
 const Statistics = () => {
-  const data2 = [
-    {
-      name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Page B",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Page C",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Page D",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Page E",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: "Page F",
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Page G",
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
+  const columnSeriesData = [
+    [
+      {
+        name: "series1",
+        data: [31, 40, 28, 51, 42, 109, 100],
+      },
+      {
+        name: "series2",
+        data: [11, 32, 45, 32, 34, 52, 41],
+      },
+    ],
   ];
 
   const data = [
@@ -69,24 +26,10 @@ const Statistics = () => {
   const COLORS = ["green", "blue", "red", "orange", "purple"];
   return (
     <div>
-      <div className="mx-24 bg-white">
+      <div className="mx-24 bg-white mt-3">
         <div className="w-full flex justify-between">
-          <ResponsiveContainer>
-            <LineChart width={200} height={500} data={data2}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" padding={{ left: 0, right: 0 }} />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Line
-                type="monotone"
-                dataKey="pv"
-                stroke="#8884d8"
-                activeDot={{ r: 8 }}
-              />
-              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-            </LineChart>
-          </ResponsiveContainer>
+          <AreaChart />
+
           <div className="w-80 rounded-3xl border p-3">
             <div className="w-full text-center">
               <span className="font-medium text-sm">
@@ -130,6 +73,197 @@ const Statistics = () => {
                     {item.name}
                   </span>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full mt-12">
+          <div className="w-full text-center">
+            <span>Статистика категорий услуг</span>
+          </div>
+          <div className="w-full flex flex-wrap">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
+              </div>
+            </div>
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+              <div className="w-full break-words">
+                <span>Похороны домашних животных</span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Просмотрено</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  22 397
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Сделано заказов</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  601
+                </span>
+              </div>
+              <div className="w-full flex justify-between">
+                <span className="text-slate-500">Оборот</span>
+                <span className="break-words font-semibold text-cyan-500">
+                  314 555
+                </span>
               </div>
             </div>
           </div>

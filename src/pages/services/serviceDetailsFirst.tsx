@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceDetailsFirst = () => {
   return (
@@ -11,15 +12,21 @@ const ServiceDetailsFirst = () => {
           Услуги Ритуальные услуги
         </div>
         <div className="flex wrap mt-8">
-          <div className="w-44 h-36 m-2 p-2 flex justify-center items-center text-center shadow-xl rounded-2xl break-words font-medium text-sm">
-            Кремация
-          </div>
-          <div className="w-44 h-36 m-2 p-2 flex justify-center items-center text-center shadow-xl rounded-2xl break-words font-medium text-sm">
-            Ритуальный транспорт
-          </div>
-          <div className="w-44 h-36 m-2 p-2 flex justify-center items-center text-center shadow-xl rounded-2xl break-words font-medium text-sm">
-            Элитные похороны
-          </div>
+          <Link to="/services/1/1">
+            <div className="w-44 h-36 m-2 p-2 flex justify-center items-center text-center shadow-xl rounded-2xl break-words font-medium text-sm">
+              Кремация
+            </div>
+          </Link>
+          <Link to="/services/1/1">
+            <div className="w-44 h-36 m-2 p-2 flex justify-center items-center text-center shadow-xl rounded-2xl break-words font-medium text-sm">
+              Ритуальный транспорт
+            </div>
+          </Link>
+          <Link to="/services/1/1">
+            <div className="w-44 h-36 m-2 p-2 flex justify-center items-center text-center shadow-xl rounded-2xl break-words font-medium text-sm">
+              Элитные похороны
+            </div>
+          </Link>
         </div>
       </div>
     </div>

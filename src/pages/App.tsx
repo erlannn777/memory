@@ -32,8 +32,8 @@ function App() {
           <Route path="/new-orders" element={<NewOrders />} />
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/QA" element={<QA />} />
-          <Route path="/Chat" element={<Chat />} />
+          <Route path="/qa" element={<QA />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
         <CreateServiceModal />
         <NewOrderModal />
