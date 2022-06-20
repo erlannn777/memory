@@ -40,7 +40,7 @@ const Users = () => {
           Добавлены могилки
         </button>
       </div>
-      <div style={{ width: "50vw" }} className="mx-auto my-auto mt-8">
+      <div style={{ width: "80vw" }} className="mx-auto my-auto mt-8">
         <form
           action=""
           className="grid grid-cols-4 gap-4"
