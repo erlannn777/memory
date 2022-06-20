@@ -42,6 +42,7 @@ const AreaChart = () => {
       },
     },
   };
+  console.log(series);
 
   return (
     <ReactApexChart
