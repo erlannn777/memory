@@ -3,19 +3,6 @@ import { Cell, Pie, PieChart } from "recharts";
 import AreaChart from "./AreaChart";
 
 const Statistics = () => {
-  const columnSeriesData = [
-    [
-      {
-        name: "series1",
-        data: [31, 40, 28, 51, 42, 109, 100],
-      },
-      {
-        name: "series2",
-        data: [11, 32, 45, 32, 34, 52, 41],
-      },
-    ],
-  ];
-
   const data = [
     { name: "Поиск мест захоронения", value: 400 },
     { name: "Похороны животных", value: 300 },
@@ -81,8 +68,8 @@ const Statistics = () => {
           <div className="w-full text-center">
             <span>Статистика категорий услуг</span>
           </div>
-          <div className="w-full flex flex-wrap">
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4">
+          <div className="w-full flex flex-wrap items-start justify-center">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -105,7 +92,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -128,7 +115,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -151,7 +138,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -174,7 +161,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -197,7 +184,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -220,7 +207,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
@@ -243,7 +230,7 @@ const Statistics = () => {
                 </span>
               </div>
             </div>
-            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-5">
+            <div className="w-64 h-60 shadow-xl rounded-2xl flex flex-col justify-around p-4 m-4">
               <div className="w-full break-words">
                 <span>Похороны домашних животных</span>
               </div>
