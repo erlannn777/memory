@@ -1,0 +1,132 @@
+.wrapper{
+    display: grid;
+    width: 85vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.why{
+    width: 85vw;
+    margin: auto;
+}
+
+.header{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 4vh;
+}
+
+.premsBlock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+    margin-top: 10vh;
+}
+
+.premsBlockImg>img{
+    max-width: 40vw;
+    max-height: 70vh;
+}
+
+.premsHeader{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.premsAbout{
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.premsBlockAbout{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.premsChecks{
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}
+
+.premsChecksItem{
+    display: grid;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 42px;
+    grid-template-columns: 1fr 10fr;
+}
+
+.premsChecksItems{
+    display: grid;
+    row-gap: 1vh;
+}
+
+.categoryes{
+    margin-top: 5vw;
+}
+
+.categoryesItem>img{
+    width: 100%;
+}
+
+.categoryesWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 2vw;
+}
+
+.categoryesItemHeader{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.categoryesItem{
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.categoryesHeader{
+    text-align: center;
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 5vh;
+}
+
+.aboutsOfCat{
+    margin: 3vh;
+    display: grid;
+    row-gap: 1vh;
+}
+
+.categoryesItemBtn{
+    border: 1px solid #454F5B;
+    border-radius: 2px;
+    padding:1.5vh 2vw;
+    background-color: rgba(250, 250, 250, 1);
+    cursor: pointer;
+    width: 30%;
+}
+
+.allCatsWrapper{
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.allCatsBtn{
+    border: 1px solid #454F5B;
+    border-radius: 2px;
+    padding:1.5vh 3vw;
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    /* width: 15%; */
+    border: none;
+    font-weight: 500;
+    background-color: rgba(246, 171, 58, 1);
+}

@@ -1,0 +1,64 @@
+*{
+    font: SF Pro Display;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footerUpperItemHeader{
+    font-weight: 500;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    max-width: 100vw;
+    margin: auto;
+    padding: 1vh 10vw 1vh 10vw;
+    padding-left: 10vw;
+    color: white;
+    background-color: rgba(36, 39, 46, 1);
+    padding-top: 8vh;
+}
+
+.footerUpper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 1vh;
+}
+
+.footerUpperItem{
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.under{
+    font-size: 14px;
+    font: SF Pro Display;
+    opacity: 0,6;
+    margin: 2vh 0;
+}
+
+.icon{
+    width: 26px;
+}
+
+.hr{
+    opacity: 0.08;
+    border: 1px white solid;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.itemsOfIcons{
+    margin-bottom: 4vh;
+}

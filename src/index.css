@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    transition: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slide{
+    width: 95vw;
+}
+
+.premsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10vw;
+    margin: auto;
+    max-width: 85vw;
+    justify-content: center;
+}
+
+.premWrap{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin: 2vh 0;
+    grid-template-rows: 1fr .01fr;
+    row-gap: 1.5vh;
+}   
+
+.premWrap>*{
+    margin: auto;
+    text-align: center;
+}
+
+.prem{
+    display: grid;
+    align-items: center;
+    height: 15vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .0001fr;
+    row-gap: 10px;
+    box-shadow: inset 0px 1px 0px #C4CDD5, inset 0px -1px 0px #C4CDD5;
+}
+
+.DD{
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.isOpenedDD{
+    transition: .3s;
+    transition-duration: .5s;
+    animation: opensOfDD0 .4s ease-out forwards;
+}
+
+@keyframes opensOfDD{
+    from {
+        height: 0;
+        width: 100%;
+    }
+    to{
+        height: 100%;
+    }
+}
+
+/* .slide-enter {
+    transform: translateX(-95vw);
+  }
+  .slide-enter-active {
+    transform: translateX(0px);
+    transition: all 3s;
+  }
+  .slide-exit {
+    transform: translateX(0px);
+  }
+  .slide-exit-active {
+    transform: translateX(-95vw);
+    transition: all 3s;
+  } */

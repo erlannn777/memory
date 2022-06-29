@@ -1,0 +1,142 @@
+.sliderContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 99vw;
+    overflow: hidden;
+}
+.slide{
+    /* padding: 0 7.5vw; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 0 5vw; */
+    column-gap: 1vw;
+    padding: 5vh 7.5vw;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.imgWrapper{
+    max-width: 40vw;
+}
+
+.imgWrapper>img{
+    max-width: 30vw;
+}
+
+.slideName{
+    margin-bottom: 4vh;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 300;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.slideAbout{
+    font-size: 18px;
+}
+
+.priceTitle{
+    font-size: 12px;
+}
+
+.pricesAll{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 13vw;
+}
+
+.navigaton{
+    justify-content: center;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigaton>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navigaton>button>*{
+    transition: .4s;
+    animation: .4s opacitys ease-in;
+}
+
+@keyframes opacitys{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.priceNow{
+    align-items: center;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.priceOld{
+    align-items: left;
+    color: rgba(164, 164, 164, 1);
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration:line-through;
+}
+
+.toCartBtn{
+    background-color: rgba(246, 171, 58, 1);
+    color: black;
+    padding: 1.5vh 2vw;
+    border: none;
+    font-size: 16px;
+}
+
+.slideAbouts{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.slideInfo{
+    padding-right: 10vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.8fr;
+    row-gap: 1vh;
+}
+
+.slideActive{
+    width: 100vw;
+}
+
+
+
+.slide-enter {
+    transform: translateY(-50px);
+    z-index: -1;
+  }
+  .slide-enter-active {
+    transform: translateY(0px);
+    transition: all 500ms ease-in;
+    z-index: 0;
+  }
+  .slide-exit {
+    transform: translateY(0px);
+    z-index: 0;
+    opacity: 1;
+  }
+  .slide-exit-active {
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 500ms ease-in;
+  }

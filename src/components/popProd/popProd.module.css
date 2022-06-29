@@ -1,0 +1,126 @@
+.wrapper{ 
+    margin-bottom: 5vh;
+    width: 85vw;
+    margin: auto;
+}
+
+.headerOfPopsWrapper{
+    display: grid;
+    grid-template-columns: 5fr 0.3fr;
+    align-items: center;
+    margin-bottom: 5vh;
+
+}
+
+.headerOfPops{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    color: #161C24;
+}
+.wrapperOfArrows {
+    width: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.wrapperOfArrows>button>*{
+    width: 2.5vw;
+    height: 2.5vw;
+    display: grid;
+    justify-content: right;
+}
+.wrapperOfArrows button{
+    background-color: transparent;
+    border: white;
+    cursor: pointer;
+    padding: 0;
+}
+.wrapperOfItems{
+    scrollbar-color: black transparent;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.item{
+    width: 19.75vw;
+    padding: 10px, 0px, 10px, 0px;
+    box-shadow: inset 0px -1px 0px #EAEAEA, inset 1px 0px 0px #EAEAEA, inset -1px 0px 0px #EAEAEA;
+}
+
+.imgWrapper{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.itemHeader{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.itemHeader{
+    display: grid;
+    grid-template-columns: .2fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: .5vh;
+}
+
+.itemHeader>p{
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+}
+
+.itemHeader>svg{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+}
+
+.promotion{
+    background-color: white;
+    padding: .1vh .4vw;
+    text-align: right;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: .8vh;
+}
+
+.imgWrapper>img{
+    width: 14.25vw;
+}
+
+.imgWrapper{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.itemPrices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.priceNow{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.priceOld{
+    text-decoration:line-through;
+    font-size: 18px;
+}
+
+.wrapperOfItems::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.wrapperOfItems::-webkit-scrollbar-thumb {
+    background-color: #a5a5a5;
+}

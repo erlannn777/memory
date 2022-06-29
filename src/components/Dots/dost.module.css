@@ -1,0 +1,19 @@
+.dots{
+    max-width: 300px;
+    display: grid;
+    row-gap: 2vh;
+    position: absolute;
+}
+
+.dotsStr{
+    width: 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dot{
+    width: 5px;
+    height: 5px;
+    background-color: rgba(246, 171, 58, 1);
+    border-radius: 50px;
+}
