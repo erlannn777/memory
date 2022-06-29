@@ -10,7 +10,7 @@ export const publicApi = axios.create({
   baseURL: API,
 });
 
-$api.interceptors.request.use((config) => {
+$api.interceptors.request.use((config: any) => {
   config.headers.Authorization = `Bearer ${localStorage.getItem("token")}`;
   return config;
 });
