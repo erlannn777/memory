@@ -4,7 +4,6 @@ import $api from "../../constans/Api";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(email);
 
   const handleSubmit = async () => {
     try {
