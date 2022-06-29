@@ -5,7 +5,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   console.log(email);
-  console.log(password);
 
   const handleSubmit = async () => {
     try {
